@@ -1,0 +1,113 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--hero-footer-background);
+}
+
+.footer__container {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline; 
+        justify-content: space-between;
+    }      
+}
+
+.footer__wrapper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.footer__title {
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    @media screen and (max-width: $pre-desk) {
+        text-align: center;
+    }
+}
+
+/* footer address */
+.address-wrapper {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desk){
+        margin-right: 165px;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+
+    @media screen and (max-width: $pre-desk) {
+        min-width: 154px;
+        text-align: center;
+    }
+}
+
+.address {
+    @media screen and (max-width: $pre-desk) {
+        margin-bottom: 60px;
+    }
+}
+
+.address__item {
+    @media screen and (max-width: $pre-desk) {
+        text-align: center;
+    }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    color: var(--footer-contacts-link-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__link--white {
+    color: var(--primary-white-color);
+}
+
+/* footer social */
+.social-wrapper {
+    @media screen and (max-width: $pre-tabl) {
+        margin-bottom: 60px;
+    } 
+
+    @media screen and (min-width: $tablet) and (max-width: $pre-desk) {
+        margin-top: 5px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
+}
+
+.social--retreat {
+    margin-top: 20px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.social__link--background {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.social__icon--white {
+    fill: var(--primary-white-color);
+}

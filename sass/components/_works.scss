@@ -1,0 +1,28 @@
+.section--without-top {
+    padding-top: 0;
+    @media screen and (max-width: $pre-desk) {
+        display: none;
+    }
+}
+
+.work__item {
+    position: relative;
+}
+
+.work__wrapper {
+    position: absolute;
+    width: 370px;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    left: 0;
+}
+
+.work__type {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
