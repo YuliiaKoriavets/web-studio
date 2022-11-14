@@ -90,6 +90,14 @@
         }
 }
 
+.mob-nav__link--current {
+    color: var(--accent-color);
+
+    &::after {
+        width: 100%;
+    }
+}
+
 .mob-menu__phone {
     display: inline-block;
     margin-bottom: 32px;
@@ -111,6 +119,7 @@
 
 .mob-social {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mob-social__item:not(:last-child) {

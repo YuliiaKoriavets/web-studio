@@ -7,8 +7,7 @@
 
 .footer__container {
     @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: baseline; 
+        display: flex; 
         justify-content: space-between;
     }      
 }
@@ -33,6 +32,11 @@
 .address-wrapper {
     @media screen and (min-width: $tablet) and (max-width: $pre-desk){
         margin-right: 165px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }
 
@@ -92,6 +96,7 @@
     
     @media screen and (min-width: $desktop) {
         margin-left: 70px;
+        margin-top: 72px;
     }
 }
 
