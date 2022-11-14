@@ -1,5 +1,6 @@
 .hero__overlay {
     max-width: 480px;
+    width: 100%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -15,7 +16,7 @@
         }
 
 
-    @media screen and (min-width: $tablet) and (max-width: $predesk) {
+    @media screen and (min-width: $tablet) and (max-width: $pre-desk) {
         max-width: 768px;
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img768.jpg) no-repeat center, var(--hero-other-bg);
 
@@ -50,7 +51,8 @@
     align-items: center;
     padding-top: 118px;
     padding-bottom: 118px;
-    min-width: 480px;
+    max-width: 480px;
+    width: 100%;
 
     @media screen and (min-width: $tablet) {
     max-width: 768px;
