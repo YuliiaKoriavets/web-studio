@@ -25,6 +25,15 @@
 
 
 /* projects */
+.card-set {
+    @media screen and (max-width: $pre-tabl) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+}
 .project__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

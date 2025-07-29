@@ -1,272 +1,426 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebStudio</title>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
-        <link rel="stylesheet" href="./css/main.min.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-    <body>
-        <header class="header">
-            <div class="container header__container">
-                <nav class="container__nav">
-                    <a class="logo header__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-                    <ul class="site-nav">
-                        <li class="site-nav__item">
-                            <a  class="site-nav__link" href="./index.html">Home</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Projects</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="./contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="contacts">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="mailto:info@webstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@webstudio.com</a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="tel:+19455551111">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+1 945 555 1111</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="container__nav">
+          <a class="logo header__logo" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Projects</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@webstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@webstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+19455551111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+1 945 555 1111</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <main>
-            <section class="section">
-            <div class="container">
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Projects</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="button filter__button">All</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">
+                Websites
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">
+                Applications
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">
+                Design
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button filter__button">
+                Marketing
+              </button>
+            </li>
+          </ul>
 
-            <h1 class="visually-hidden">Projects</h1>
-            <ul class="filter">
-                <li class="filter__item">
-                    <button type="button" class="button filter__button">All</button></li>
-                <li class="filter__item">
-                    <button type="button" class="button filter__button">Websites</button></li>
-                <li class="filter__item">
-                    <button type="button" class="button filter__button">Applications</button></li>
-                <li class="filter__item">
-                    <button type="button" class="button filter__button">Design</button></li>
-                <li class="filter__item">
-                    <button type="button" class="button filter__button">Marketing</button></li>
+          <ul class="card-set project">
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p1.jpg"
+                    alt="Головна сторвнка веб-сайту Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A modern and responsive website for a tech startup
+                      offering smart software solutions and digital services for
+                      growing businesses.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">TechQuack</h2>
+                  <p class="project__type">Websites</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p2.jpg"
+                    alt="Два гравці з команд New Orlean та Golden Star, які боряться за мʼяч"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A bold and energetic poster design created for a
+                      high-profile basketball match, capturing the spirit of
+                      competition and team pride.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">
+                    New Orlean vs Golden Star Poster
+                  </h2>
+                  <p class="project__type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p3.jpg"
+                    alt="Логотип ресторану Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A sleek and intuitive mobile app for a seafood restaurant,
+                      designed to simplify table reservations, menu browsing,
+                      and online orders.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Restaurant Seafood</h2>
+                  <p class="project__type">Applications</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p4.jpg"
+                    alt="Чорні навушники"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A strategic marketing campaign designed to increase brand
+                      visibility and drive customer engagement through digital
+                      channels.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Project Prime</h2>
+                  <p class="project__type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p5.jpg"
+                    alt="Дві коробки білого та бежевого кольорів "
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A smart application designed to help users organize,
+                      track, and manage their personal or business storage
+                      efficiently.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Project Boxes</h2>
+                  <p class="project__type">Applications</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p6.jpg"
+                    alt="Монітор на якому зображено головну сторінку веб-сайту Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A visually striking website that celebrates global
+                      creativity and connects artists from all over the world.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Inspiration has no Borders</h2>
+                  <p class="project__type">Websites</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p7.jpg"
+                    alt="Розгорнутий журналдля жінок"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      A bold and elegant magazine layout designed to highlight
+                      exclusive stories, timeless style, and limited-edition
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Limited Edition</h2>
+                  <p class="project__type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p8.jpg"
+                    alt="Цінник з лого LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      An experimental marketing concept built to test bold ideas
+                      and push the boundaries of brand engagement.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Project LAB</h2>
+                  <p class="project__type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="project__link" href="#">
+                <div class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="images/img-p9.jpg"
+                    alt="Відкритий ноутбук на сторінці додатку Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="project__overlay">
+                    <p class="project__text">
+                      An innovative app built to support business scalability
+                      through smart tools, analytics, and efficient workflow
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__border">
+                  <h2 class="project__name">Growing Business</h2>
+                  <p class="project__type">Applications</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="address-wrapper">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="address">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--white"
+                    href="https://maps.app.goo.gl/DdcvXBRWsGFLPRxj7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1200 Elm Street, Suite 567, Austin, <br />TX 78701, USA</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@webstudio.com"
+                    >info@webstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+19455551111"
+                    >+1 945 555 1111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social-wrapper">
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="social social--retreat">
+              <li class="social__item">
+                <a
+                  class="social__link social__link--background"
+                  href="#"
+                  aria-label="instagram"
+                >
+                  <svg
+                    class="social__icon social__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link--background"
+                  href="#"
+                  aria-label="twitter"
+                >
+                  <svg
+                    class="social__icon social__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link--background"
+                  href="#"
+                  aria-label="facebook"
+                >
+                  <svg
+                    class="social__icon social__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link--background"
+                  href="#"
+                  aria-label="linkedin"
+                >
+                  <svg
+                    class="social__icon social__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
+          </div>
+        </div>
 
-            <ul class="card-set project">
-                <li class="card-set___item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p1.jpg" alt="Головна сторвнка веб-сайту Технокряк" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A modern and responsive website for a tech startup offering smart software solutions and digital services for growing
-                                businesses.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">TechQuack</h2>
-                            <p class="project__type">Websites</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p2.jpg" alt="Два гравці з команд New Orlean та Golden Star, які боряться за мʼяч" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A bold and energetic poster design created for a high-profile basketball match, capturing the spirit of competition and
-                                team pride.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">New Orlean vs Golden Star Poster</h2>
-                            <p class="project__type">Design</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p3.jpg" alt="Логотип ресторану Seafood" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A sleek and intuitive mobile app for a seafood restaurant, designed to simplify table reservations, menu browsing, and
-                                online orders.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Restaurant Seafood</h2>
-                            <p class="project__type">Applications</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p4.jpg" alt="Чорні навушники" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A strategic marketing campaign designed to increase brand visibility and drive customer engagement through digital
-                                channels.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Project Prime</h2>
-                            <p class="project__type">Marketing</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p5.jpg" alt="Дві коробки білого та бежевого кольорів " width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A smart application designed to help users organize, track, and manage their personal or business storage efficiently.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Project Boxes</h2>
-                            <p class="project__type">Applications</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p6.jpg" alt="Монітор на якому зображено головну сторінку веб-сайту Inspiration has no Borders" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A visually striking website that celebrates global creativity and connects artists from all over the world.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Inspiration has no Borders</h2>
-                            <p class="project__type">Websites</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p7.jpg" alt="Розгорнутий журналдля жінок" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">A bold and elegant magazine layout designed to highlight exclusive stories, timeless style, and limited-edition
-                                features.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Limited Edition</h2>
-                            <p class="project__type">Design</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p8.jpg" alt="Цінник з лого LAB" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">An experimental marketing concept built to test bold ideas and push the boundaries of brand engagement.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Project LAB</h2>
-                            <p class="project__type">Marketing</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a class="project__link" href="#">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="images/img-p9.jpg" alt="Відкритий ноутбук на сторінці додатку Growing Business" width="370" height="294">
-                            <div class="project__overlay">
-                                <p class="project__text">An innovative app built to support business scalability through smart tools, analytics, and efficient workflow
-                                solutions.</p>
-                            </div>
-                        </div>
-                        <div class="project__border">
-                            <h2 class="project__name">Growing Business</h2>
-                            <p class="project__type">Applications</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container footer__container">
-        
-                <div class="address-wrapper">
-                    <a class="logo footer__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-                    <address>
-                        <ul class="address">
-                            <li class="address__item">
-                                <a class="address__link address__link--white" href="https://maps.app.goo.gl/DdcvXBRWsGFLPRxj7"
-                                    target="_blank" rel="noopener noreferrer">1200 Elm Street, Suite 567, Austin, <br>TX 78701, USA</a>
-                            </li>
-                            <li class="address__item">
-                                <a class="address__link" href="mailto:info@webstudio.com">info@webstudio.com</a>
-                            </li>
-                            <li class="address__item">
-                                <a class="address__link" href="tel:+19455551111">+1 945 555 1111</a>
-                            </li>
-                        </ul>
-                    </address>
-                </div>
-        
-                <div class="social-wrapper">
-                    <h3 class="footer__title">Follow Us</h3>
-                    <ul class="social social--retreat">
-                        <li class="social__item">
-                            <a class="social__link social__link--background" href="#" aria-label="instagram">
-                                <svg class="social__icon social__icon--white" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"> </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--background" href="#" aria-label="twitter">
-                                <svg class="social__icon social__icon--white" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"> </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--background" href="#" aria-label="facebook">
-                                <svg class="social__icon social__icon--white" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"> </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--background" href="#" aria-label="linkedin">
-                                <svg class="social__icon social__icon--white" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"> </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-        
-                <div class="subscription">
-                    <h3 class="footer__title">Subscribe to our newsletter</h3>
-                    <div class="subscription__wrapper">
-                        <input type="text" name="mail" class="subscription__mail" placeholder="E-mail">
-                        <button type="button" class="button subscription__button">Subscribe
-                            <svg class="subscription__icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-        
-            </div>
-        </footer>
-    </body>
-    </html>
+        <div class="subscription">
+          <h3 class="footer__title">Subscribe to our newsletter</h3>
+          <div class="subscription__wrapper">
+            <input
+              type="text"
+              name="mail"
+              class="subscription__mail"
+              placeholder="E-mail"
+            />
+            <button type="button" class="button subscription__button">
+              Subscribe
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/filter-projects.js"></script>
+  </body>
+</html>
