@@ -48,8 +48,60 @@
             >
           </li>
         </ul>
+        <button class="menu-button js-open-menu" type="button">
+          <svg class="menu-button__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mob-menu js-menu-container">
+      <div class="mob-menu__body">
+        <button class="mob-menu__button js-close-menu" type="button">
+          <svg class="mob-menu__icon" width="19" height="19">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mob-nav">
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="./portfolio.html">Projects</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="mob-menu__wrapper">
+          <a class="mob-menu__phone" href="tel:+19455551111">+1 945 555 1111</a>
+
+          <a class="mob-menu__email" href="mailto:info@devstudio.com"
+            >info@webstudio.com</a
+          >
+
+          <ul class="mob-social">
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="#">Instagram</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="#">Twitter</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="#">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="section">
@@ -229,6 +281,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/service-worker.js"></script>
   </body>
 </html>
