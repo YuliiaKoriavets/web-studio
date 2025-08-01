@@ -1,3 +1,7 @@
+self.addEventListener("activate", (event) => {
+  event.waitUntil(self.registration.navigationPreload.enable());
+});
+
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
@@ -10,12 +14,4 @@ self.addEventListener("fetch", (event) => {
       return fetch(event.request);
     })()
   );
-});
-
-self.addEventListener("activate", (event) => {
-  event.waitUntil(self.registration.navigationPreload.enable());
-});
-
-self.addEventListener("activate", (event) => {
-  event.waitUntil(self.registration.navigationPreload.disable());
 });
